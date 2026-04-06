@@ -110,17 +110,17 @@ export default function DocSidebar({ techSlug }: DocSidebarProps) {
     setViewMode("docs");
     setQuery("");
     setActiveSections(new Set());
-    router.push(`/docs/${slug}`);
+    router.push(`${slug}`);
   }
 
   function handleDocSelect(label: string) {
     const slug = labelToSlug(label);
-    router.push(`/docs/${activeTech}/${slug}`);
+    router.push(`${activeTech}/${slug}`);
   }
 
   function isDocActive(label: string): boolean {
     const slug = labelToSlug(label);
-    return pathname === `/docs/${activeTech}/${slug}`;
+    return pathname === `/${activeTech}/${slug}`;
   }
 
   const getFilteredSections = useCallback((): SidebarSection[] => {

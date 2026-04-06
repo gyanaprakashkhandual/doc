@@ -1,8 +1,10 @@
 "use client";
 
+import React, { Suspense } from "react";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { ArrowRight, BookOpen, Code2, Layers, Zap } from "lucide-react";
+import docRegistry from "@/app/utils/doc.registry";
 
 const features = [
   {
@@ -31,13 +33,16 @@ const features = [
   },
 ];
 
-export default function HomePage() {
+function DocPageInner() {
   const router = useRouter();
 
   const handleStart = () => {
-    router.push("/docs/javascript");
+    router.push("/javascript");
   };
 
+  const handleTechClick = (slug: string) => {
+    router.push(`/${slug}`);
+  };
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
@@ -49,6 +54,9 @@ export default function HomePage() {
           transition={{ duration: 0.5 }}
           className="inline-flex items-center gap-2 px-3 py-1.5 mb-6 text-xs font-medium bg-gray-100 dark:bg-gray-900 text-gray-500 dark:text-gray-400 rounded-full border border-gray-200 dark:border-gray-800"
         >
+          <span className="w-1.5 h-1.5 rounded-full bg-gray-900 dark:bg-white animate-pulse" />
+          {docRegistry.length} technolog{docRegistry.length !== 1 ? "ies" : "y"}{" "}
+          documented
         </motion.div>
 
         <motion.h1
@@ -138,8 +146,50 @@ export default function HomePage() {
         </div>
       </section>
 
-    
+      {/* ── Divider ── */}
+      <div className="border-t border-gray-200 dark:border-gray-800" />
 
+      {/* ── Tech Grid from docRegistry ── */}
+      <section id="tech-grid" className="max-w-5xl px-6 py-16 mx-auto">
+        <div className="mb-10 text-center">
+          <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
+            Pick a technology
+          </h2>
+          <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+            Click any topic below to jump straight into the documentation.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {docRegistry.map((doc, i) => (
+            <motion.button
+              key={doc.slug}
+              onClick={() => handleTechClick(doc.slug)}
+              initial={{ opacity: 0, y: 12 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: i * 0.04 }}
+              className="group w-full text-left rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-5 hover:bg-gray-900 dark:hover:bg-white hover:border-gray-900 dark:hover:border-white shadow-sm hover:shadow-md transition-all duration-200"
+            >
+              <div className="flex items-start gap-4">
+                <span className="text-3xl shrink-0">{doc.icon}</span>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center justify-between gap-2">
+                    <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 group-hover:text-white dark:group-hover:text-gray-900 transition-colors">
+                      {doc.label}
+                    </h3>
+                    <span className="text-[10px] font-medium px-2 py-0.5 rounded-full shrink-0 bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 group-hover:bg-white/20 dark:group-hover:bg-black/10 group-hover:text-white/80 dark:group-hover:text-gray-700 group-hover:border-white/20 dark:group-hover:border-black/10 transition-colors">
+                      {doc.totalDocs} docs
+                    </span>
+                  </div>
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-1.5 leading-relaxed group-hover:text-gray-300 dark:group-hover:text-gray-600 transition-colors line-clamp-2">
+                    {doc.description}
+                  </p>
+                </div>
+              </div>
+            </motion.button>
+          ))}
+        </div>
+      </section>
 
       {/* ── Bottom CTA ── */}
       <section className="px-6 py-16 border-t border-gray-200 dark:border-gray-800">
@@ -161,5 +211,13 @@ export default function HomePage() {
         </div>
       </section>
     </div>
+  );
+}
+
+export default function DocPage() {
+  return (
+    <Suspense fallback={null}>
+      <DocPageInner />
+    </Suspense>
   );
 }
