@@ -35,7 +35,7 @@ const docRegistry: DocTech[] = [
     icon: <SiGit size={24} className="text-orange-400" />,
     color: "text-orange-400",
     totalDocs: 30,
-  }
+  },
 ];
 
 export default docRegistry;

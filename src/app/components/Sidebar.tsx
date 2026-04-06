@@ -1,4 +1,5 @@
-/* eslint-disable react-hooks/preserve-manual-memoization */
+/* eslint-disable @typescript-eslint/no-unused-expressions */
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import { useEffect, useState, useRef, useCallback } from "react";
@@ -11,7 +12,6 @@ import {
   SlidersHorizontal,
   Check,
   Menu,
-  ArrowLeft,
   BookOpen,
   ChevronDown,
 } from "lucide-react";
@@ -41,6 +41,7 @@ export default function DocSidebar({ techSlug }: DocSidebarProps) {
     new Set(),
   );
   const [expandedNested, setExpandedNested] = useState<Set<string>>(new Set());
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [totalDocs, setTotalDocs] = useState(0);
 
   const filterRef = useRef<HTMLDivElement>(null);

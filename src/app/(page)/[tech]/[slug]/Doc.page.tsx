@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import MarkdownRenderer from "@/app/components/markdown/Markdown.render";
 
-
 interface DocPageClientProps {
   content: string;
   fileName: string;
@@ -13,11 +12,8 @@ interface DocPageClientProps {
 }
 
 export default function DocPageClient({ content }: DocPageClientProps) {
-  
-
   return (
     <>
-      
       <motion.div
         initial={{ opacity: 0, y: 8 }}
         animate={{ opacity: 1, y: 0 }}

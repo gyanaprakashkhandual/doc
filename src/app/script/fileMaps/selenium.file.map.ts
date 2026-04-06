@@ -11,50 +11,41 @@ const seleniumFileMap: Record<string, { fileName: string; filePath: string }> =
     },
     "environment-setup": {
       fileName: "EnvironmentSetup.md",
-      filePath:
-        "note/test/selenium/getting-started/EnvironmentSetup.md",
+      filePath: "note/test/selenium/getting-started/EnvironmentSetup.md",
     },
     "browser-drivers": {
       fileName: "BrowserDrivers.md",
-      filePath:
-        "note/test/selenium/getting-started/BrowserDrivers.md",
+      filePath: "note/test/selenium/getting-started/BrowserDrivers.md",
     },
     "first-selenium-test": {
       fileName: "FirstTest.md",
-      filePath:
-        "note/test/selenium/getting-started/FirstTest.md",
+      filePath: "note/test/selenium/getting-started/FirstTest.md",
     },
     "webdriver-basics": {
       fileName: "WebDriverBasics.md",
-      filePath:
-        "note/test/selenium/getting-started/WebDriverBasics.md",
+      filePath: "note/test/selenium/getting-started/WebDriverBasics.md",
     },
     "maven-and-gradle-setup": {
       fileName: "MavenGradle.md",
-      filePath:
-        "note/test/selenium/getting-started/MavenGradle.md",
+      filePath: "note/test/selenium/getting-started/MavenGradle.md",
     },
 
     // WebDriver Core
     "locator-strategies": {
       fileName: "LocatorStrategies.md",
-      filePath:
-        "note/test/selenium/webdriver-core/LocatorStrategies.md",
+      filePath: "note/test/selenium/webdriver-core/LocatorStrategies.md",
     },
     "browser-commands": {
       fileName: "BrowserCommands.md",
-      filePath:
-        "note/test/selenium/webdriver-core/BrowserCommands.md",
+      filePath: "note/test/selenium/webdriver-core/BrowserCommands.md",
     },
     "navigation-commands": {
       fileName: "NavigationCommands.md",
-      filePath:
-        "note/test/selenium/webdriver-core/NavigationCommands.md",
+      filePath: "note/test/selenium/webdriver-core/NavigationCommands.md",
     },
     "webelement-interactions": {
       fileName: "WebElementInteractions.md",
-      filePath:
-        "note/test/selenium/webdriver-core/WebElementInteractions.md",
+      filePath: "note/test/selenium/webdriver-core/WebElementInteractions.md",
     },
     "waits-and-synchronization": {
       fileName: "Waits.md",
@@ -66,8 +57,7 @@ const seleniumFileMap: Record<string, { fileName: string; filePath: string }> =
     },
     "handling-alerts-and-popups": {
       fileName: "AlertsPopups.md",
-      filePath:
-        "note/test/selenium/webdriver-core/AlertsPopups.md",
+      filePath: "note/test/selenium/webdriver-core/AlertsPopups.md",
     },
     "handling-frames-and-iframes": {
       fileName: "Frames.md",
@@ -75,45 +65,37 @@ const seleniumFileMap: Record<string, { fileName: string; filePath: string }> =
     },
     "handling-windows-and-tabs": {
       fileName: "WindowsTabs.md",
-      filePath:
-        "note/test/selenium/webdriver-core/WindowsTabs.md",
+      filePath: "note/test/selenium/webdriver-core/WindowsTabs.md",
     },
     "screenshots-and-videos": {
       fileName: "ScreenshotsVideos.md",
-      filePath:
-        "note/test/selenium/webdriver-core/ScreenshotsVideos.md",
+      filePath: "note/test/selenium/webdriver-core/ScreenshotsVideos.md",
     },
 
     // Page Object Model
     "introduction-to-pom": {
       fileName: "IntroPOM.md",
-      filePath:
-        "note/test/selenium/page-object-model/IntroPOM.md",
+      filePath: "note/test/selenium/page-object-model/IntroPOM.md",
     },
     "page-factory": {
       fileName: "PageFactory.md",
-      filePath:
-        "note/test/selenium/page-object-model/PageFactory.md",
+      filePath: "note/test/selenium/page-object-model/PageFactory.md",
     },
     "base-page-class": {
       fileName: "BasePage.md",
-      filePath:
-        "note/test/selenium/page-object-model/BasePage.md",
+      filePath: "note/test/selenium/page-object-model/BasePage.md",
     },
     "page-components": {
       fileName: "PageComponents.md",
-      filePath:
-        "note/test/selenium/page-object-model/PageComponents.md",
+      filePath: "note/test/selenium/page-object-model/PageComponents.md",
     },
     "pom-with-inheritance": {
       fileName: "POMInheritance.md",
-      filePath:
-        "note/test/selenium/page-object-model/POMInheritance.md",
+      filePath: "note/test/selenium/page-object-model/POMInheritance.md",
     },
     "fluent-page-object-pattern": {
       fileName: "FluentPOM.md",
-      filePath:
-        "note/test/selenium/page-object-model/FluentPOM.md",
+      filePath: "note/test/selenium/page-object-model/FluentPOM.md",
     },
 
     // Cucumber BDD
@@ -151,30 +133,25 @@ const seleniumFileMap: Record<string, { fileName: string; filePath: string }> =
     },
     "data-tables": {
       fileName: "DataTables.md",
-      filePath:
-        "note/test/selenium/cucumber/advanced/DataTables.md",
+      filePath: "note/test/selenium/cucumber/advanced/DataTables.md",
     },
     "doc-strings": {
       fileName: "DocStrings.md",
-      filePath:
-        "note/test/selenium/cucumber/advanced/DocStrings.md",
+      filePath: "note/test/selenium/cucumber/advanced/DocStrings.md",
     },
     "custom-parameter-types": {
       fileName: "CustomParameterTypes.md",
-      filePath:
-        "note/test/selenium/cucumber/advanced/CustomParameterTypes.md",
+      filePath: "note/test/selenium/cucumber/advanced/CustomParameterTypes.md",
     },
     "world-object": {
       fileName: "WorldObject.md",
-      filePath:
-        "note/test/selenium/cucumber/advanced/WorldObject.md",
+      filePath: "note/test/selenium/cucumber/advanced/WorldObject.md",
     },
 
     // Framework Architecture
     "project-structure": {
       fileName: "ProjectStructure.md",
-      filePath:
-        "note/test/selenium/framework/ProjectStructure.md",
+      filePath: "note/test/selenium/framework/ProjectStructure.md",
     },
     "driver-manager": {
       fileName: "DriverManager.md",
@@ -182,13 +159,11 @@ const seleniumFileMap: Record<string, { fileName: string; filePath: string }> =
     },
     "config-and-properties": {
       fileName: "ConfigProperties.md",
-      filePath:
-        "note/test/selenium/framework/ConfigProperties.md",
+      filePath: "note/test/selenium/framework/ConfigProperties.md",
     },
     "test-data-management": {
       fileName: "TestDataManagement.md",
-      filePath:
-        "note/test/selenium/framework/TestDataManagement.md",
+      filePath: "note/test/selenium/framework/TestDataManagement.md",
     },
     "utilities-and-helpers": {
       fileName: "Utilities.md",
@@ -202,8 +177,7 @@ const seleniumFileMap: Record<string, { fileName: string; filePath: string }> =
     // Advanced WebDriver
     "javascript-executor": {
       fileName: "JavaScriptExecutor.md",
-      filePath:
-        "note/test/selenium/advanced/JavaScriptExecutor.md",
+      filePath: "note/test/selenium/advanced/JavaScriptExecutor.md",
     },
     "actions-class": {
       fileName: "ActionsClass.md",
@@ -215,8 +189,7 @@ const seleniumFileMap: Record<string, { fileName: string; filePath: string }> =
     },
     "file-upload-and-download": {
       fileName: "FileUploadDownload.md",
-      filePath:
-        "note/test/selenium/advanced/FileUploadDownload.md",
+      filePath: "note/test/selenium/advanced/FileUploadDownload.md",
     },
     "cookies-management": {
       fileName: "Cookies.md",
@@ -242,13 +215,11 @@ const seleniumFileMap: Record<string, { fileName: string; filePath: string }> =
     },
     "cucumber-html-reports": {
       fileName: "CucumberHTMLReports.md",
-      filePath:
-        "note/test/selenium/reporting/CucumberHTMLReports.md",
+      filePath: "note/test/selenium/reporting/CucumberHTMLReports.md",
     },
     "screenshots-in-reports": {
       fileName: "ScreenshotsInReports.md",
-      filePath:
-        "note/test/selenium/reporting/ScreenshotsInReports.md",
+      filePath: "note/test/selenium/reporting/ScreenshotsInReports.md",
     },
 
     // CI/CD and Grid
@@ -276,28 +247,23 @@ const seleniumFileMap: Record<string, { fileName: string; filePath: string }> =
     // Best Practices
     "stable-locator-strategies": {
       fileName: "StableLocators.md",
-      filePath:
-        "note/test/selenium/best-practices/StableLocators.md",
+      filePath: "note/test/selenium/best-practices/StableLocators.md",
     },
     "test-independence": {
       fileName: "TestIndependence.md",
-      filePath:
-        "note/test/selenium/best-practices/TestIndependence.md",
+      filePath: "note/test/selenium/best-practices/TestIndependence.md",
     },
     "retry-mechanisms": {
       fileName: "RetryMechanisms.md",
-      filePath:
-        "note/test/selenium/best-practices/RetryMechanisms.md",
+      filePath: "note/test/selenium/best-practices/RetryMechanisms.md",
     },
     "cross-browser-testing": {
       fileName: "CrossBrowserTesting.md",
-      filePath:
-        "note/test/selenium/best-practices/CrossBrowserTesting.md",
+      filePath: "note/test/selenium/best-practices/CrossBrowserTesting.md",
     },
     "typescript-with-selenium": {
       fileName: "TypeScript.md",
-      filePath:
-        "note/test/selenium/best-practices/TypeScript.md",
+      filePath: "note/test/selenium/best-practices/TypeScript.md",
     },
   };
 

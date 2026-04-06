@@ -5,7 +5,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
 
   "introduction-to-git": {
     fileName: "IntroductionToGit.md",
-    filePath: "note/development/tooling/git/getting-started/IntroductionToGit.md",
+    filePath:
+      "note/development/tooling/git/getting-started/IntroductionToGit.md",
   },
   "installing-git": {
     fileName: "InstallingGit.md",
@@ -13,11 +14,13 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "initial-configuration": {
     fileName: "InitialConfiguration.md",
-    filePath: "note/development/tooling/git/getting-started/InitialConfiguration.md",
+    filePath:
+      "note/development/tooling/git/getting-started/InitialConfiguration.md",
   },
   "how-git-works-internally": {
     fileName: "HowGitWorksInternally.md",
-    filePath: "note/development/tooling/git/getting-started/HowGitWorksInternally.md",
+    filePath:
+      "note/development/tooling/git/getting-started/HowGitWorksInternally.md",
   },
   "the-three-states": {
     fileName: "TheThreeStates.md",
@@ -25,11 +28,13 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "initializing-a-repository": {
     fileName: "InitializingARepository.md",
-    filePath: "note/development/tooling/git/getting-started/InitializingARepository.md",
+    filePath:
+      "note/development/tooling/git/getting-started/InitializingARepository.md",
   },
   "cloning-a-repository": {
     fileName: "CloningARepository.md",
-    filePath: "note/development/tooling/git/getting-started/CloningARepository.md",
+    filePath:
+      "note/development/tooling/git/getting-started/CloningARepository.md",
   },
   "your-first-commit": {
     fileName: "YourFirstCommit.md",
@@ -47,7 +52,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "git-objects-blob-tree-commit": {
     fileName: "GitObjectsBlobTreeCommit.md",
-    filePath: "note/development/tooling/git/core-concepts/GitObjectsBlobTreeCommit.md",
+    filePath:
+      "note/development/tooling/git/core-concepts/GitObjectsBlobTreeCommit.md",
   },
   "the-head-pointer": {
     fileName: "TheHEADPointer.md",
@@ -59,11 +65,13 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "the-git-object-database": {
     fileName: "TheGitObjectDatabase.md",
-    filePath: "note/development/tooling/git/core-concepts/TheGitObjectDatabase.md",
+    filePath:
+      "note/development/tooling/git/core-concepts/TheGitObjectDatabase.md",
   },
   "references-and-ref-logs": {
     fileName: "ReferencesAndRefLogs.md",
-    filePath: "note/development/tooling/git/core-concepts/ReferencesAndRefLogs.md",
+    filePath:
+      "note/development/tooling/git/core-concepts/ReferencesAndRefLogs.md",
   },
   "the-index-file": {
     fileName: "TheIndexFile.md",
@@ -81,7 +89,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
 
   "git-init-and-git-clone": {
     fileName: "GitInitAndGitClone.md",
-    filePath: "note/development/tooling/git/basic-commands/GitInitAndGitClone.md",
+    filePath:
+      "note/development/tooling/git/basic-commands/GitInitAndGitClone.md",
   },
   "git-add-and-staging": {
     fileName: "GitAddAndStaging.md",
@@ -93,7 +102,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "git-status-and-git-diff": {
     fileName: "GitStatusAndGitDiff.md",
-    filePath: "note/development/tooling/git/basic-commands/GitStatusAndGitDiff.md",
+    filePath:
+      "note/development/tooling/git/basic-commands/GitStatusAndGitDiff.md",
   },
   "git-log-and-history": {
     fileName: "GitLogAndHistory.md",
@@ -126,7 +136,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
 
   "understanding-branches": {
     fileName: "UnderstandingBranches.md",
-    filePath: "note/development/tooling/git/branching-merging/UnderstandingBranches.md",
+    filePath:
+      "note/development/tooling/git/branching-merging/UnderstandingBranches.md",
   },
   "creating-and-switching-branches": {
     fileName: "CreatingAndSwitchingBranches.md",
@@ -135,7 +146,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "merging-branches": {
     fileName: "MergingBranches.md",
-    filePath: "note/development/tooling/git/branching-merging/MergingBranches.md",
+    filePath:
+      "note/development/tooling/git/branching-merging/MergingBranches.md",
   },
   "fast-forward-vs-three-way-merge": {
     fileName: "FastForwardVsThreeWayMerge.md",
@@ -149,7 +161,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "deleting-branches": {
     fileName: "DeletingBranches.md",
-    filePath: "note/development/tooling/git/branching-merging/DeletingBranches.md",
+    filePath:
+      "note/development/tooling/git/branching-merging/DeletingBranches.md",
   },
   "remote-tracking-branches": {
     fileName: "RemoteTrackingBranches.md",
@@ -184,7 +197,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "reordering-and-editing-commits": {
     fileName: "ReorderingAndEditingCommits.md",
-    filePath: "note/development/tooling/git/rebasing/ReorderingAndEditingCommits.md",
+    filePath:
+      "note/development/tooling/git/rebasing/ReorderingAndEditingCommits.md",
   },
   "rebase-vs-merge": {
     fileName: "RebaseVsMerge.md",
@@ -196,7 +210,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "the-golden-rule-of-rebasing": {
     fileName: "TheGoldenRuleOfRebasing.md",
-    filePath: "note/development/tooling/git/rebasing/TheGoldenRuleOfRebasing.md",
+    filePath:
+      "note/development/tooling/git/rebasing/TheGoldenRuleOfRebasing.md",
   },
 
   // =========================================================================
@@ -210,7 +225,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "git-reset-soft-mixed-hard": {
     fileName: "GitResetSoftMixedHard.md",
-    filePath: "note/development/tooling/git/undoing-changes/GitResetSoftMixedHard.md",
+    filePath:
+      "note/development/tooling/git/undoing-changes/GitResetSoftMixedHard.md",
   },
   "git-revert": {
     fileName: "GitRevert.md",
@@ -265,11 +281,13 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "tracking-branches": {
     fileName: "TrackingBranches.md",
-    filePath: "note/development/tooling/git/remote-repositories/TrackingBranches.md",
+    filePath:
+      "note/development/tooling/git/remote-repositories/TrackingBranches.md",
   },
   "pushing-tags-to-remote": {
     fileName: "PushingTagsToRemote.md",
-    filePath: "note/development/tooling/git/remote-repositories/PushingTagsToRemote.md",
+    filePath:
+      "note/development/tooling/git/remote-repositories/PushingTagsToRemote.md",
   },
   "deleting-remote-branches": {
     fileName: "DeletingRemoteBranches.md",
@@ -316,7 +334,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "release-branching-strategy": {
     fileName: "ReleaseBranchingStrategy.md",
-    filePath: "note/development/tooling/git/workflows/ReleaseBranchingStrategy.md",
+    filePath:
+      "note/development/tooling/git/workflows/ReleaseBranchingStrategy.md",
   },
 
   // =========================================================================
@@ -349,7 +368,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "partial-clone-and-shallow-clone": {
     fileName: "PartialCloneAndShallowClone.md",
-    filePath: "note/development/tooling/git/advanced/PartialCloneAndShallowClone.md",
+    filePath:
+      "note/development/tooling/git/advanced/PartialCloneAndShallowClone.md",
   },
   "git-filter-repo-and-rewriting-history": {
     fileName: "GitFilterRepoAndRewritingHistory.md",
@@ -371,7 +391,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
 
   "plumbing-vs-porcelain-commands": {
     fileName: "PlumbingVsPorcelainCommands.md",
-    filePath: "note/development/tooling/git/internals/PlumbingVsPorcelainCommands.md",
+    filePath:
+      "note/development/tooling/git/internals/PlumbingVsPorcelainCommands.md",
   },
   "how-git-hash-object-works": {
     fileName: "HowGitHashObjectWorks.md",
@@ -384,15 +405,18 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "git-references-heads-tags-remotes": {
     fileName: "GitReferencesHeadsTagsRemotes.md",
-    filePath: "note/development/tooling/git/internals/GitReferencesHeadsTagsRemotes.md",
+    filePath:
+      "note/development/tooling/git/internals/GitReferencesHeadsTagsRemotes.md",
   },
   "merge-head-and-cherry-pick-head": {
     fileName: "MergeHeadAndCherryPickHead.md",
-    filePath: "note/development/tooling/git/internals/MergeHeadAndCherryPickHead.md",
+    filePath:
+      "note/development/tooling/git/internals/MergeHeadAndCherryPickHead.md",
   },
   "transfer-protocols-http-and-ssh": {
     fileName: "TransferProtocolsHttpAndSsh.md",
-    filePath: "note/development/tooling/git/internals/TransferProtocolsHttpAndSsh.md",
+    filePath:
+      "note/development/tooling/git/internals/TransferProtocolsHttpAndSsh.md",
   },
   "the-refspec": {
     fileName: "TheRefspec.md",
@@ -400,7 +424,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "maintenance-and-data-recovery": {
     fileName: "MaintenanceAndDataRecovery.md",
-    filePath: "note/development/tooling/git/internals/MaintenanceAndDataRecovery.md",
+    filePath:
+      "note/development/tooling/git/internals/MaintenanceAndDataRecovery.md",
   },
 
   // =========================================================================
@@ -429,11 +454,13 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "github-issues": {
     fileName: "GitHubIssues.md",
-    filePath: "note/development/tooling/git/github-fundamentals/GitHubIssues.md",
+    filePath:
+      "note/development/tooling/git/github-fundamentals/GitHubIssues.md",
   },
   "github-discussions": {
     fileName: "GitHubDiscussions.md",
-    filePath: "note/development/tooling/git/github-fundamentals/GitHubDiscussions.md",
+    filePath:
+      "note/development/tooling/git/github-fundamentals/GitHubDiscussions.md",
   },
   "github-wiki": {
     fileName: "GitHubWiki.md",
@@ -455,15 +482,18 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
 
   "understanding-pull-requests": {
     fileName: "UnderstandingPullRequests.md",
-    filePath: "note/development/tooling/git/pull-requests/UnderstandingPullRequests.md",
+    filePath:
+      "note/development/tooling/git/pull-requests/UnderstandingPullRequests.md",
   },
   "creating-a-pull-request": {
     fileName: "CreatingAPullRequest.md",
-    filePath: "note/development/tooling/git/pull-requests/CreatingAPullRequest.md",
+    filePath:
+      "note/development/tooling/git/pull-requests/CreatingAPullRequest.md",
   },
   "pr-reviews-and-approvals": {
     fileName: "PRReviewsAndApprovals.md",
-    filePath: "note/development/tooling/git/pull-requests/PRReviewsAndApprovals.md",
+    filePath:
+      "note/development/tooling/git/pull-requests/PRReviewsAndApprovals.md",
   },
   "draft-pull-requests": {
     fileName: "DraftPullRequests.md",
@@ -475,7 +505,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "linking-issues-to-prs": {
     fileName: "LinkingIssuesToPRs.md",
-    filePath: "note/development/tooling/git/pull-requests/LinkingIssuesToPRs.md",
+    filePath:
+      "note/development/tooling/git/pull-requests/LinkingIssuesToPRs.md",
   },
   "merge-strategies-merge-squash-rebase": {
     fileName: "MergeStrategiesMergeSquashRebase.md",
@@ -507,7 +538,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "events-and-triggers": {
     fileName: "EventsAndTriggers.md",
-    filePath: "note/development/tooling/git/github-actions/EventsAndTriggers.md",
+    filePath:
+      "note/development/tooling/git/github-actions/EventsAndTriggers.md",
   },
   "jobs-and-steps": {
     fileName: "JobsAndSteps.md",
@@ -530,7 +562,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "artifacts-and-caching": {
     fileName: "ArtifactsAndCaching.md",
-    filePath: "note/development/tooling/git/github-actions/ArtifactsAndCaching.md",
+    filePath:
+      "note/development/tooling/git/github-actions/ArtifactsAndCaching.md",
   },
   "matrix-builds": {
     fileName: "MatrixBuilds.md",
@@ -538,7 +571,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "reusable-workflows": {
     fileName: "ReusableWorkflows.md",
-    filePath: "note/development/tooling/git/github-actions/ReusableWorkflows.md",
+    filePath:
+      "note/development/tooling/git/github-actions/ReusableWorkflows.md",
   },
   "composite-actions": {
     fileName: "CompositeActions.md",
@@ -546,7 +580,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "deployment-environments": {
     fileName: "DeploymentEnvironments.md",
-    filePath: "note/development/tooling/git/github-actions/DeploymentEnvironments.md",
+    filePath:
+      "note/development/tooling/git/github-actions/DeploymentEnvironments.md",
   },
   "oidc-and-keyless-authentication": {
     fileName: "OIDCAndKeylessAuthentication.md",
@@ -597,7 +632,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
 
   "branch-protection-rules": {
     fileName: "BranchProtectionRules.md",
-    filePath: "note/development/tooling/git/github-security/BranchProtectionRules.md",
+    filePath:
+      "note/development/tooling/git/github-security/BranchProtectionRules.md",
   },
   rulesets: {
     fileName: "Rulesets.md",
@@ -618,15 +654,18 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "code-scanning-and-codeql": {
     fileName: "CodeScanningAndCodeQL.md",
-    filePath: "note/development/tooling/git/github-security/CodeScanningAndCodeQL.md",
+    filePath:
+      "note/development/tooling/git/github-security/CodeScanningAndCodeQL.md",
   },
   "security-advisories": {
     fileName: "SecurityAdvisories.md",
-    filePath: "note/development/tooling/git/github-security/SecurityAdvisories.md",
+    filePath:
+      "note/development/tooling/git/github-security/SecurityAdvisories.md",
   },
   "supply-chain-security": {
     fileName: "SupplyChainSecurity.md",
-    filePath: "note/development/tooling/git/github-security/SupplyChainSecurity.md",
+    filePath:
+      "note/development/tooling/git/github-security/SupplyChainSecurity.md",
   },
   "sigstore-and-artifact-attestation": {
     fileName: "SigstoreAndArtifactAttestation.md",
@@ -665,7 +704,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "github-sponsors": {
     fileName: "GitHubSponsors.md",
-    filePath: "note/development/tooling/git/github-collaboration/GitHubSponsors.md",
+    filePath:
+      "note/development/tooling/git/github-collaboration/GitHubSponsors.md",
   },
   "contributing-to-open-source": {
     fileName: "ContributingToOpenSource.md",
@@ -684,23 +724,28 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
 
   "github-packages-overview": {
     fileName: "GitHubPackagesOverview.md",
-    filePath: "note/development/tooling/git/github-packages/GitHubPackagesOverview.md",
+    filePath:
+      "note/development/tooling/git/github-packages/GitHubPackagesOverview.md",
   },
   "publishing-npm-packages": {
     fileName: "PublishingNpmPackages.md",
-    filePath: "note/development/tooling/git/github-packages/PublishingNpmPackages.md",
+    filePath:
+      "note/development/tooling/git/github-packages/PublishingNpmPackages.md",
   },
   "publishing-docker-images": {
     fileName: "PublishingDockerImages.md",
-    filePath: "note/development/tooling/git/github-packages/PublishingDockerImages.md",
+    filePath:
+      "note/development/tooling/git/github-packages/PublishingDockerImages.md",
   },
   "github-container-registry": {
     fileName: "GitHubContainerRegistry.md",
-    filePath: "note/development/tooling/git/github-packages/GitHubContainerRegistry.md",
+    filePath:
+      "note/development/tooling/git/github-packages/GitHubContainerRegistry.md",
   },
   "creating-releases": {
     fileName: "CreatingReleases.md",
-    filePath: "note/development/tooling/git/github-packages/CreatingReleases.md",
+    filePath:
+      "note/development/tooling/git/github-packages/CreatingReleases.md",
   },
   "automated-releases-with-actions": {
     fileName: "AutomatedReleasesWithActions.md",
@@ -768,7 +813,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "managing-repos-with-gh": {
     fileName: "ManagingReposWithGh.md",
-    filePath: "note/development/tooling/git/github-cli-api/ManagingReposWithGh.md",
+    filePath:
+      "note/development/tooling/git/github-cli-api/ManagingReposWithGh.md",
   },
   "managing-prs-and-issues-with-gh": {
     fileName: "ManagingPRsAndIssuesWithGh.md",
@@ -790,7 +836,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "github-apps-vs-oauth-apps": {
     fileName: "GitHubAppsVsOAuthApps.md",
-    filePath: "note/development/tooling/git/github-cli-api/GitHubAppsVsOAuthApps.md",
+    filePath:
+      "note/development/tooling/git/github-cli-api/GitHubAppsVsOAuthApps.md",
   },
   webhooks: {
     fileName: "Webhooks.md",
@@ -820,15 +867,18 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "signing-commits-with-gpg": {
     fileName: "SigningCommitsWithGPG.md",
-    filePath: "note/development/tooling/git/configuration/SigningCommitsWithGPG.md",
+    filePath:
+      "note/development/tooling/git/configuration/SigningCommitsWithGPG.md",
   },
   "ssh-keys-and-authentication": {
     fileName: "SSHKeysAndAuthentication.md",
-    filePath: "note/development/tooling/git/configuration/SSHKeysAndAuthentication.md",
+    filePath:
+      "note/development/tooling/git/configuration/SSHKeysAndAuthentication.md",
   },
   "multiple-git-identities": {
     fileName: "MultipleGitIdentities.md",
-    filePath: "note/development/tooling/git/configuration/MultipleGitIdentities.md",
+    filePath:
+      "note/development/tooling/git/configuration/MultipleGitIdentities.md",
   },
   "credential-helpers": {
     fileName: "CredentialHelpers.md",
@@ -836,7 +886,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "git-difftool-and-mergetool": {
     fileName: "GitDifftoolAndMergetool.md",
-    filePath: "note/development/tooling/git/configuration/GitDifftoolAndMergetool.md",
+    filePath:
+      "note/development/tooling/git/configuration/GitDifftoolAndMergetool.md",
   },
 
   // =========================================================================
@@ -850,7 +901,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "conventional-commits": {
     fileName: "ConventionalCommits.md",
-    filePath: "note/development/tooling/git/best-practices/ConventionalCommits.md",
+    filePath:
+      "note/development/tooling/git/best-practices/ConventionalCommits.md",
   },
   "atomic-commits": {
     fileName: "AtomicCommits.md",
@@ -858,11 +910,13 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "keeping-a-clean-git-history": {
     fileName: "KeepingACleanGitHistory.md",
-    filePath: "note/development/tooling/git/best-practices/KeepingACleanGitHistory.md",
+    filePath:
+      "note/development/tooling/git/best-practices/KeepingACleanGitHistory.md",
   },
   "monorepo-vs-polyrepo": {
     fileName: "MonorepoVsPolyrepo.md",
-    filePath: "note/development/tooling/git/best-practices/MonorepoVsPolyrepo.md",
+    filePath:
+      "note/development/tooling/git/best-practices/MonorepoVsPolyrepo.md",
   },
   "large-file-storage-with-git-lfs": {
     fileName: "LargeFileStorageWithGitLFS.md",
@@ -871,7 +925,8 @@ const gitFileMap: Record<string, { fileName: string; filePath: string }> = {
   },
   "git-in-ci-cd-pipelines": {
     fileName: "GitInCICDPipelines.md",
-    filePath: "note/development/tooling/git/best-practices/GitInCICDPipelines.md",
+    filePath:
+      "note/development/tooling/git/best-practices/GitInCICDPipelines.md",
   },
   "disaster-recovery-and-backup": {
     fileName: "DisasterRecoveryAndBackup.md",

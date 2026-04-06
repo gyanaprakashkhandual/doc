@@ -1,10 +1,19 @@
 "use client";
 
-import React, { Suspense } from "react";
+import React from "react";
 import { useRouter } from "next/navigation";
-import { motion } from "framer-motion";
-import { ArrowRight, BookOpen, Code2, Layers, Zap } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  ArrowRight,
+  BookOpen,
+  Code2,
+  Layers,
+  Zap,
+  Sun,
+  Moon,
+} from "lucide-react";
 import docRegistry from "@/app/utils/doc.registry";
+import { useTheme } from "../context/Theme.context";
 
 const features = [
   {
@@ -33,8 +42,10 @@ const features = [
   },
 ];
 
-function DocPageInner() {
+export default function DocHomePage() {
   const router = useRouter();
+  const { theme, resolvedTheme, setTheme, mounted } = useTheme();
+  const [themeOpen, setThemeOpen] = React.useState(false);
 
   const handleStart = () => {
     router.push("/javascript");
@@ -46,6 +57,82 @@ function DocPageInner() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100">
+      {/* ── Right Actions ── */}
+      <div className="fixed top-4 right-4 z-50">
+        <div className="flex items-center gap-1">
+          {/* Theme toggle */}
+          {mounted && (
+            <div className="relative">
+              <motion.button
+                whileHover={{ scale: 1.08 }}
+                whileTap={{ scale: 0.92 }}
+                onClick={() => setThemeOpen(!themeOpen)}
+                aria-label="Toggle theme"
+                title={`Current theme: ${theme}`}
+                className="p-2 rounded-lg text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white hover:bg-neutral-100 dark:hover:bg-neutral-800/60 transition-colors"
+              >
+                <AnimatePresence mode="wait" initial={false}>
+                  {resolvedTheme === "dark" ? (
+                    <motion.span
+                      key="sun"
+                      initial={{ rotate: -90, opacity: 0, scale: 0.7 }}
+                      animate={{ rotate: 0, opacity: 1, scale: 1 }}
+                      exit={{ rotate: 90, opacity: 0, scale: 0.7 }}
+                      transition={{ duration: 0.2, ease: "easeOut" }}
+                      className="flex"
+                    >
+                      <Sun className="w-4 h-4" strokeWidth={1.8} />
+                    </motion.span>
+                  ) : (
+                    <motion.span
+                      key="moon"
+                      initial={{ rotate: 90, opacity: 0, scale: 0.7 }}
+                      animate={{ rotate: 0, opacity: 1, scale: 1 }}
+                      exit={{ rotate: -90, opacity: 0, scale: 0.7 }}
+                      transition={{ duration: 0.2, ease: "easeOut" }}
+                      className="flex"
+                    >
+                      <Moon className="w-4 h-4" strokeWidth={1.8} />
+                    </motion.span>
+                  )}
+                </AnimatePresence>
+              </motion.button>
+              {/* Theme dropdown menu */}
+              <AnimatePresence>
+                {themeOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -8, scale: 0.95 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: -8, scale: 0.95 }}
+                    transition={{ duration: 0.15 }}
+                    className="theme-menu absolute right-0 mt-2 w-40 rounded-lg bg-white dark:bg-neutral-900 shadow-lg shadow-black/10 dark:shadow-black/40 border border-neutral-200 dark:border-neutral-800 overflow-hidden z-60"
+                  >
+                    {(["light", "dark", "system"] as const).map((t) => (
+                      <button
+                        key={t}
+                        onClick={() => {
+                          setTheme(t);
+                          setThemeOpen(false);
+                        }}
+                        className={`
+                          w-full px-4 py-2.5 text-left text-sm font-medium transition-colors
+                          ${
+                            theme === t
+                              ? "bg-neutral-100 dark:bg-neutral-800 text-neutral-900 dark:text-white"
+                              : "text-neutral-600 dark:text-neutral-400 hover:bg-neutral-50 dark:hover:bg-neutral-800/40 hover:text-neutral-900 dark:hover:text-white"
+                          }
+                        `}
+                      >
+                        {t.charAt(0).toUpperCase() + t.slice(1)} theme
+                      </button>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          )}
+        </div>
+      </div>
       {/* ── Hero ── */}
       <section className="flex flex-col items-center justify-center px-6 pt-20 pb-16 text-center">
         <motion.div
@@ -214,10 +301,3 @@ function DocPageInner() {
   );
 }
 
-export default function DocPage() {
-  return (
-    <Suspense fallback={null}>
-      <DocPageInner />
-    </Suspense>
-  );
-}
